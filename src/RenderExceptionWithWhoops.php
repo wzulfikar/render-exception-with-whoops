@@ -34,7 +34,7 @@ trait RenderExceptionWithWhoops
         $handledException = $this->handleExceptionWithWhoops($e, $editor);
         
         $responseClass = 'Symfony\Component\HttpFoundation\Response';
-        if (!class_exists($responseClass)) {
+        if (class_exists($responseClass)) {
             return new $responseClass(
                 $handledException,
                 $e->getStatusCode(),

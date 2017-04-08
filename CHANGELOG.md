@@ -1,4 +1,8 @@
 
+0.0.4 / 2017-04-08
+==================
+- Fixed conditional to check if class exists
+
 0.0.3 / 2017-04-08
 ==================
 - **Added**
